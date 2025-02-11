@@ -4,9 +4,9 @@
   <listeners>
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+  <test thread-count="5" parallel="tests" name="firefoxTest(failed)">
     <parameter name="os" value="Windows"/>
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="testCases.TC_01_TestAccount">
         <methods>
@@ -16,5 +16,5 @@
         </methods>
       </class> <!-- testCases.TC_01_TestAccount -->
     </classes>
-  </test> <!-- ChromeTest(failed) -->
+  </test> <!-- firefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

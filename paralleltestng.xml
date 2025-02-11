@@ -8,14 +8,53 @@
 
 
 
-  <test  name="ChromeTest">
+  <test thread-count="5" name="ChromeTest">
+  
   	<parameter name="os" value="Windows"/>
-  	<parameter name="browser" value="edge"/>
+  	<parameter name="browser" value="chrome"/>
+  	
     <classes>
       <class name="testBase.BaseClass"/>
       <class name="testCases.TC_01_TestAccount"/>
+      <class name="testCases.TC_02_TestLogin"/>
+      <class name="testCases.TC_03_LoginExcelData"/>
+      
     </classes>
-    </test>
+    
+    
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="EdgeTest">
+  
+  	<parameter name="os" value="Windows"/>
+  	<parameter name="browser" value="edge"/>
+  	
+    <classes>
+      <class name="testBase.BaseClass"/>
+      <class name="testCases.TC_01_TestAccount"/>
+      <class name="testCases.TC_02_TestLogin"/>
+      <class name="testCases.TC_03_LoginExcelData"/>
+      
+    </classes>
+    
+    
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="firefoxTest">
+  
+  	<parameter name="os" value="Windows"/>
+  	<parameter name="browser" value="firefox"/>
+  	
+    <classes>
+      <class name="testBase.BaseClass"/>
+      <class name="testCases.TC_01_TestAccount"/>
+      <class name="testCases.TC_02_TestLogin"/>
+      <class name="testCases.TC_03_LoginExcelData"/>
+      
+    </classes>
+    
+    
+  </test> <!-- Test -->
     
    
 </suite> <!-- Suite -->

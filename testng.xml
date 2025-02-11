@@ -12,7 +12,10 @@
   	
     <classes>
       <class name="testBase.BaseClass"/>
+      <class name="testCases.TC_01_TestAccount"/>
       <class name="testCases.TC_02_TestLogin"/>
+      <class name="testCases.TC_03_LoginExcelData"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

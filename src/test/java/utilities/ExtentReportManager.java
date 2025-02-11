@@ -31,17 +31,17 @@ public class ExtentReportManager implements ITestListener {
         repName = "Test-Report-" + timeStamp + ".html";
         sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName); // Specify report location
         
-        sparkReporter.config().setDocumentTitle("SPS Automation Report"); // Report title
-        sparkReporter.config().setReportName("SPS Functional Testing"); // Report name
+        sparkReporter.config().setDocumentTitle("Soorya Automation Report"); // Report title
+        sparkReporter.config().setReportName("Soorya Functional Testing"); // Report name
         sparkReporter.config().setTheme(Theme.DARK);
         
         extent = new ExtentReports();
         extent.attachReporter(sparkReporter);
-        extent.setSystemInfo("Application", "SPStesting");
+        extent.setSystemInfo("Application", "Soorya_testing");
         extent.setSystemInfo("Module", "Admin");
-        extent.setSystemInfo("Sub Module", "SPSSubmodule");
+        extent.setSystemInfo("Sub Module", "Soorya_Testing_Submodule");
         extent.setSystemInfo("User Name", System.getProperty("user.name"));
-        extent.setSystemInfo("Environment", "SPSQA");
+        extent.setSystemInfo("Environment", "Soorya_Automation_QA");
 
         String os = testContext.getCurrentXmlTest().getParameter("os");
         extent.setSystemInfo("Operating System", os);

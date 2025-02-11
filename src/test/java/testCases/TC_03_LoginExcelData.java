@@ -24,16 +24,30 @@ public class TC_03_LoginExcelData extends BaseClass{
 		s.clickLogin();
 		
 		LogoutPage lp=new LogoutPage(driver);
-		boolean a=lp.checkLogout();
+		boolean a=false;
+		if(sts.equals("pass")) {
+			a=lp.checkLogout();
+		}
 		
-		if(a) {
-			lp.clickingLogout();
-			Assert.assertTrue(a);
+		
+		if(a==true  ) {
+			if(sts.equalsIgnoreCase("pass")) {
+				lp.clickingLogout();
+				Assert.assertTrue(a);
+			}
+			
+			else
+				Assert.assertTrue(false);
+			
 			
 		}
 		else
-			Assert.assertTrue(false);
-		
+			if(sts.equalsIgnoreCase("pass")) {
+				Assert.assertTrue(false);}
+			else
+				Assert.assertTrue(true);
+				
+			
 		
 	
 	}
